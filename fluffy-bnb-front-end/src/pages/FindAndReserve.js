@@ -28,9 +28,9 @@ class FindAndReserve extends Component {
                     <div className="col-lg-4">
                         <div style={{height: '90vh', width: '100%'}} className="sticky-top sticky-offset">
                             <GoogleMapReact
-                                bootstrapURLKeys={{
-                                    key: "AIzaSyAToL6gGIeBklnqw56KKK2WXJZ8IEEX2pg"
-                                }}
+                                // bootstrapURLKeys={{
+                                //     key: ""
+                                // }}
                                 defaultCenter={this.props.center}
                                 defaultZoom={this.props.zoom}
                             >
