@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router, NavLink, Route, Switch} from "react-router-dom";
 import Home from "../pages/Home";
 import FindAndReserve from "../pages/FindAndReserve";
+import SignUp from "../pages/SignUp";
 
 class Nav extends Component {
     render() {
@@ -26,7 +27,7 @@ class Nav extends Component {
                         </ul>
                         {/*<form className="form-inline">*/}
                         <button type="button" className="btn btn-link text-white">Login</button>
-                        <button className="btn btn-outline-light" type="button">Sign Up</button>
+                        <a className="btn btn-outline-light text-white" href="/signup">Sign Up</a>
 
 
                         {/*</form>*/}
@@ -38,6 +39,7 @@ class Nav extends Component {
                     <Switch>
                         <Route exact path="/" component={Home}/>
                         <Route path="/search" component={FindAndReserve}/>
+                        <Route path="/signup" component={SignUp}/>
 
                     </Switch>
 
